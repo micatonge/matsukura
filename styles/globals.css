@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #00a2ff;
+  --text-color: #252525; /* Default for body text */
+  --background-color: #ffffff; /* Default for body background */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Use 'Open Sans' for body text and headings */
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif; /* Use 'Open Sans' for headings as well */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.75rem 2rem; /* Padding around the navbar */
+  background-color: var(--background-color); /* Can be customized */
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+}
+
+/* Brand section with logo and title */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 2rem; /* Space between logo and title */
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color); /* Adjust according to theme */
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+/* Links section */
+.nav-links {
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+  flex-wrap: wrap; /* Allow links to wrap onto new line */
+
+}
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--primary-color); /* Change color on hover */
+}
+
+
+/* Hero section styles */
+.hero {
+  height: 80vh;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000000; /* Set to black */
+  padding: 1rem 0;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Default to 2 columns */
+  gap: 2rem;
+}
+
+.footer-item {
+  padding: 1rem;
+  --text-color: #ffffff; /* Override text color in this class */
+  color: var(--text-color); /* Apply the overridden value */
+}
+
+.footer-item h4 {
+  font-size: 1rem;
+  color: var(--text-color); /* Ensure the color is applied */
+}
+
+.footer-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-item ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-item a {
+  color: var(--text-color); /* Apply white to links inside footer-item */
+  text-decoration: none;
+}
+
+.footer-item .ft {
+  color: var(--text-color); /* Ensure ft class is white */
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  color: var(--primary-color); /* Highlight on hover */
+}
+
+.footer-bottom {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem 0;
+  border-top: 1px solid #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  margin-left: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.footer .social-icons a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns on medium and larger screens */
+  }
+}
+
+/* Find Store Section Styling */
+.find-store-section {
+  background-color: #854836 !important; /* Ensure navy blue background */
+
+  padding: 40px 20px; /* Padding inside the section */
+  margin-top: 50px; /* Optional: Adds space above */
+  text-align: center; /* Centers the content */
+}
+
+.find-store-section h2 {
+  font-size: 2rem; /* Adjust the heading size */
+  color: white;
+  margin-bottom: 20px;
+  margin-top: -15px; /* Optional: Adds space above */
+
+}
+
+.find-store-section a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.find-store-section a:hover {
+  background-color: #f3f3f3; /* Light grey background on hover */
+}
+
+
+/* Add spacing to ensure the image is below the navbar */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Banner Section Styling */
+.banner-image-container {
+  position: relative;
+  height: 60vh; /* Set the height to 30% of the viewport height for a more compact banner */
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.banner-image-container img {
+  object-fit: cover; /* Ensure the image covers the area */
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: flex-start; /* Align the content to the left */
+  align-items: flex-start; /* Align the content to the top */
+  padding: 20px;
+}
+
+.banner-content {
+  text-align: left; /* Align the text to the left */
+  color: white;
+  max-width: 600px; /* Limit the width of the text container */
+}
+
+.banner-title {
+  font-size: 2.5rem; /* Adjust font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.shop-button {
+  padding: 10px 30px;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #f3f3f3; /* Light grey on hover */
+}
+
+
+/* Ensure that the rest of the page has padding */
+section {
+  padding-top: 20px; /* Space between the banner and the next section */
+}
+
+
+/* Style for the Promo Banner */
+.promo-banner {
+  background-color: #f4f4f4; /* Light grey background */
+  color: black; /* Black text for better contrast */
+  padding: 2rem; /* Increase padding for taller height */
+  text-align: center;
+  font-weight: bold; /* Make text bold */
+}
+
+.promo-banner p {
+  font-size: 1.25rem; /* Slightly larger text */
+  margin: 0;
+}
+
+/* Optional: For a white text version with dark grey background */
+.promo-banner-white-text {
+  background-color: #333; /* Dark grey background */
+  color: white; /* White text */
+}
+
+.eye{
+  margin-left: 25px;
+  font-size: 2rem;
+  
+}

@@ -1,34 +1,39 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Navbar from "../components/NavBar";
-import Footer from "../components/Footer";
-import styles from "../styles/Contact.module.css";
+import React from 'react';
+import Head from 'next/head';
 
-const Contact: NextPage = () => {
+const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div className="container mx-auto px-4 py-8">
       <Head>
-        <title>Contact Us - Matsukura Eyewear</title>
-        <meta
-          name="description"
-          content="Get in touch with Matsukura Eyewear"
-        />
+        <title>Page Title</title>
+        <meta name="description" content="Description of the page content" />
       </Head>
 
-      <Navbar />
+      <h1 className="text-3xl font-bold mb-8">Page Heading</h1>
 
-      <main className={styles.main}>
-        <h1>Contact Us</h1>
-        <form className={styles.form}>
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <input type="tel" placeholder="Phone" />
-          <textarea placeholder="Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </main>
+      <div className="content">
+        <p className="text-lg mb-4">
+          This is a generic Next.js page component where you can edit the content and structure.
+        </p>
+        <p className="text-lg mb-4">
+          You can add more sections, components, or any other logic here as needed. Tailwind CSS is being used for styling.
+        </p>
 
-      <Footer />
+        {/* Example of adding a list or dynamic content */}
+        <ul className="list-disc pl-6">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+
+        {/* Example of a button with event handling */}
+        <button
+          onClick={() => alert('Button clicked!')}
+          className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg"
+        >
+          Click Me
+        </button>
+      </div>
     </div>
   );
 };

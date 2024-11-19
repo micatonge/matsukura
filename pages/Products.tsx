@@ -1,80 +1,41 @@
-import { useState } from "react";
-import type { NextPage } from "next";
+import React from "react";
 import Head from "next/head";
-import Navbar from "../components/NavBar";
-import Footer from "../components/Footer";
-import ProductCard from "../components/ProductCard";
-import SearchBar from "../components/SearchBar";
-import ProductFilter from "../components/ProductFilter";
 
-const products = [
-  {
-    id: 1,
-    name: "Classic Frame",
-    price: 5500,
-    imageUrl: "/images/classic-frame.jpg",
-    category: "classic",
-  },
-  {
-    id: 2,
-    name: "Modern Frame",
-    price: 6600,
-    imageUrl: "/images/modern-frame.jpg",
-    category: "modern",
-  },
-  // Add more products
-];
-
-const Products: NextPage = () => {
-  const [filteredProducts, setFilteredProducts] = useState(products);
-
-  const handleSearch = (query: string) => {
-    const filtered = products.filter((product) =>
-      product.name.toLowerCase().includes(query.toLowerCase()),
-    );
-    setFilteredProducts(filtered);
-  };
-
-  const handleFilter = (category: string) => {
-    if (category === "") {
-      setFilteredProducts(products);
-    } else {
-      const filtered = products.filter(
-        (product) => product.category === category,
-      );
-      setFilteredProducts(filtered);
-    }
-  };
-
+const Products = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="container mx-auto px-4 py-8">
       <Head>
-        <title>Products - Matsukura Eyewear</title>
-        <meta name="description" content="Browse our eyewear collection" />
+        <title>Page Title</title>
+        <meta name="description" content="Description of the page content" />
       </Head>
 
-      <Navbar />
+      <h1 className="text-3xl font-bold mb-8">Page Heading</h1>
 
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8">Our Products</h1>
+      <div className="content">
+        <p className="text-lg mb-4">
+          This is a generic Next.js page component where you can edit the
+          content and structure.
+        </p>
+        <p className="text-lg mb-4">
+          You can add more sections, components, or any other logic here as
+          needed. Tailwind CSS is being used for styling.
+        </p>
 
-        <div className="mb-8 flex space-x-4">
-          <div className="w-2/3">
-            <SearchBar onSearch={handleSearch} />
-          </div>
-          <div className="w-1/3">
-            <ProductFilter onFilterChange={handleFilter} />
-          </div>
-        </div>
+        {/* Example of adding a list or dynamic content */}
+        <ul className="list-disc pl-6">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {filteredProducts.map((product) => (
-            <ProductCard key={product.id} {...product} />
-          ))}
-        </div>
-      </main>
-
-      <Footer />
+        {/* Example of a button with event handling */}
+        <button
+          onClick={() => alert("Button clicked!")}
+          className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg"
+        >
+          Click Me
+        </button>
+      </div>
     </div>
   );
 };

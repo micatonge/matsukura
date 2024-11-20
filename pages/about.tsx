@@ -29,7 +29,7 @@ const About = () => {
           </Typography>
           <Typography variant="body1" paragraph>
             Our products are crafted with attention to detail, ensuring that each
-            pair is not only fashionable but also durable. Whether you're looking
+            pair is not only fashionable but also durable. Whether you&apos;re looking
             for prescription glasses, sunglasses, or specialized eyewear, we have
             something for every occasion.
           </Typography>
@@ -46,22 +46,22 @@ const About = () => {
         </Box>
 
         {/* Services Section */}
-        <Typography variant="h4" gutterBottom align="center" sx={{ color: '#00000', paddingTop: 5}}>
+        <Typography variant="h4" gutterBottom align="center" sx={{ color: '#00000', paddingTop: 5 }}>
           Our Services
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
-            <Card sx={{ height: '100%', backgroundColor: '#fefae0' }}>
+            <Card sx={{ height: "100%", backgroundColor: "#fefae0" }}>
               <CardContent>
-                <Typography variant="h6" gutterBottom sx={{ color: '#283618' }}>
+                <Typography variant="h6" gutterBottom sx={{ color: "#283618" }}>
                   Glasses Sets - ¥6600
                 </Typography>
-                <Typography variant="body2" paragraph sx={{ color: '#34495e' }}>
-                  We offer a special "3-pair set" of glasses starting at just ¥6600. Whether you need driving glasses,
+                <Typography variant="body2" paragraph sx={{ color: "#34495e" }}>
+                  We offer a special &quot;3-pair set&quot; of glasses starting at just ¥6600. Whether you need driving glasses,
                   desk glasses, or indoor glasses, we have the perfect set for you. Our glasses come with various options,
                   including high-index lenses, sunglasses, and blue-cut lenses.
                 </Typography>
-                <Typography variant="body2" paragraph sx={{ color: '#34495e' }}>
+                <Typography variant="body2" paragraph sx={{ color: "#34495e" }}>
                   We also provide custom prescriptions and offer a variety of frames for you to choose from.
                 </Typography>
               </CardContent>
@@ -69,19 +69,19 @@ const About = () => {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Card sx={{ height: '100%', backgroundColor: '#fefae0' }}>
+            <Card sx={{ height: "100%", backgroundColor: "#fefae0" }}>
               <CardContent>
-                <Typography variant="h6" gutterBottom sx={{ color: '#283618' }}>
+                <Typography variant="h6" gutterBottom sx={{ color: "#283618" }}>
                   Hearing Aids Consultation
                 </Typography>
-                <Typography variant="body2" paragraph sx={{ color: '#34495e' }}>
-                  We have started offering consultations for hearing loss. If you're experiencing difficulty hearing conversations,
+                <Typography variant="body2" paragraph sx={{ color: "#34495e" }}>
+                  We have started offering consultations for hearing loss. If you&apos;re experiencing difficulty hearing conversations,
                   if the TV is too loud, or if you often mishear things, we are here to help.
                 </Typography>
-                <Typography variant="body2" paragraph sx={{ color: '#34495e' }}>
+                <Typography variant="body2" paragraph sx={{ color: "#34495e" }}>
                   We offer hearing tests and consultations regarding hearing aids. All consultations require an appointment. Please get in touch to book your session.
                 </Typography>
-                <Button variant="contained" href="https://matsukura-megane.co.jp/yata/" target="_blank" fullWidth sx={{ backgroundColor: '#606c38', color: '#fff', '&:hover': { backgroundColor: '#a3b18a' } }}>
+                <Button variant="contained" href="https://matsukura-megane.co.jp/yata/" target="_blank" fullWidth sx={{ backgroundColor: "#606c38", color: "#fff", "&:hover": { backgroundColor: "#a3b18a" } }}>
                   Learn More
                 </Button>
               </CardContent>

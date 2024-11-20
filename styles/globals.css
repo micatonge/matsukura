@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer Styles */
 .footer {
-  background-color: #000000; /* Set to black */
+  background-color: #283618; /* Set to green */
   padding: 1rem 0;
 }
 
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-bottom {
-  background-color: #000000;
+  background-color: #283618;
   color: #ffffff;
   padding: 1rem 0;
   border-top: 1px solid #333333;
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Find Store Section Styling */
 .find-store-section {
-  background-color: #854836 !important; /* Ensure navy blue background */
+  background-color: #fefae0 !important; /* Ensure navy blue background */
 
   padding: 40px 20px; /* Padding inside the section */
   margin-top: 50px; /* Optional: Adds space above */
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .find-store-section h2 {
   font-size: 2rem; /* Adjust the heading size */
-  color: white;
+  color: #283618;
   margin-bottom: 20px;
   margin-top: -15px; /* Optional: Adds space above */
 
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 10px 30px;
   background-color: white;
-  color: black;
+  color: #283618;
   border-radius: 25px;
   transition: background-color 0.3s ease;
 }

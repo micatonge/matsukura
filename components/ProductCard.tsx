@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
         <Button
           variant="contained"
           sx={{
-            backgroundColor: "#854836", // Brown button color (like the location section)
+            backgroundColor: "#283618", // Brown button color (like the location section)
             color: "#ffffff", // White text
             textTransform: "uppercase",
             fontWeight: 600,
@@ -37,7 +37,7 @@ const ProductCard = ({ product }) => {
             padding: "10px 30px", // Matching padding to your location section button
             borderRadius: "25px", // Round edges
             "&:hover": {
-              backgroundColor: "#f3f3f3", // Light grey on hover
+              backgroundColor: "#a3b18a", // Light grey on hover
             },
           }}
           fullWidth

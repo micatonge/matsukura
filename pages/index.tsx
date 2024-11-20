@@ -34,7 +34,7 @@ const Home: NextPage = () => {
             <p className="banner-subtitle">
               Affordable, Fast, and Easy to Understand Eyewear Solutions
             </p>
-            <Link href="/products" className="shop-button">
+            <Link href="/Products" className="shop-button">
               Shop Now
             </Link>
           </div>

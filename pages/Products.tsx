@@ -1,42 +1,104 @@
-import React from "react";
-import Head from "next/head";
+import { Box, Grid } from "@mui/material";
+import ProductCard from "/components/ProductCard.tsx"; // Assuming you already have this component
 
 const Products = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Head>
-        <title>Page Title</title>
-        <meta name="description" content="Description of the page content" />
-      </Head>
+    <>
+      <Box sx={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <h2 className="text-3xl font-bold mb-8 eye sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+      Browse Eyewear
+    </h2>
+    <Box
+      sx={{
+        display: "flex",             // Use flexbox layout
+        justifyContent: "center",    // Center horizontally
+        padding: 2                   // Optional: Add some padding around the carousel
+      }}
+    >  
+      <Grid
+        container
+        spacing={3}
+        sx={{
+          justifyContent: "center", // Center the grid content horizontally
+          width: "100%",            // Ensure the grid takes the full width of the container
+          maxWidth: "1200px",       // Optional: Set a max-width for larger screens
+        }}
+      >
+        {/* First Product */}
+        <Grid item xs={12} sm={6} md={4}>
+          <ProductCard
+            product={{
+              name: "Eyeglasses 1",
+              description: "Stylish and comfortable eyeglasses with a modern design.",
+              price: 10000,
+              image: "/images/pic1.png", // Replace with your actual image path
+            }}
+          />
+        </Grid>
 
-      <h1 className="text-3xl font-bold mb-8">Page Heading</h1>
+        {/* Second Product */}
+        <Grid item xs={12} sm={6} md={4}>
+          <ProductCard
+            product={{
+              name: "Sunglasses 1",
+              description: "Protect your eyes in style with these premium sunglasses.",
+              price: 12000,
+              image: "/images/pic2.png", // Replace with your actual image path
+            }}
+          />
+        </Grid>
 
-      <div className="content">
-        <p className="text-lg mb-4">
-          This is a generic Next.js page component where you can edit the
-          content and structure.
-        </p>
-        <p className="text-lg mb-4">
-          You can add more sections, components, or any other logic here as
-          needed. Tailwind CSS is being used for styling.
-        </p>
+        {/* Third Product */}
+        <Grid item xs={12} sm={6} md={4}>
+          <ProductCard
+            product={{
+              name: "Eyeglasses 2",
+              description: "Classic eyeglasses with a timeless look and feel.",
+              price: 9000,
+              image: "/images/pic3.png", // Replace with your actual image path
+            }}
+          />
+        </Grid>
 
-        {/* Example of adding a list or dynamic content */}
-        <ul className="list-disc pl-6">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
+        {/* First Product */}
+        <Grid item xs={12} sm={6} md={4}>
+          <ProductCard
+            product={{
+              name: "Eyeglasses 1",
+              description: "Stylish and comfortable eyeglasses with a modern design.",
+              price: 10000,
+              image: "/images/pic1.png", // Replace with your actual image path
+            }}
+          />
+        </Grid>
 
-        {/* Example of a button with event handling */}
-        <button
-          onClick={() => alert("Button clicked!")}
-          className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg"
-        >
-          Click Me
-        </button>
-      </div>
-    </div>
+        {/* Second Product */}
+        <Grid item xs={12} sm={6} md={4}>
+          <ProductCard
+            product={{
+              name: "Sunglasses 1",
+              description: "Protect your eyes in style with these premium sunglasses.",
+              price: 12000,
+              image: "/images/pic2.png", // Replace with your actual image path
+            }}
+          />
+        </Grid>
+
+        {/* Third Product */}
+        <Grid item xs={12} sm={6} md={4}>
+          <ProductCard
+            product={{
+              name: "Eyeglasses 2",
+              description: "Classic eyeglasses with a timeless look and feel.",
+              price: 9000,
+              image: "/images/pic3.png", // Replace with your actual image path
+            }}
+          />
+        </Grid>
+      </Grid>
+    </Box>
+  </Box>
+      </>
   );
 };
 

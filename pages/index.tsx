@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { Box, Grid } from "@mui/material";
 import ProductCarousel from "../components/ProductCarousel";
 import PromoBanner from "../components/PromoBanner";
 import StoreLocations from "../components/StoreLocations";
@@ -44,8 +45,12 @@ const Home: NextPage = () => {
       <PromoBanner />
 
       <section className="py-16">
-        <h2 className="text-3xl font-bold text-center mb-8 eye">Browse Eyewear</h2>
-        <ProductCarousel />
+        <Box sx={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h2 className="text-3xl font-bold mb-8 eye sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            Browse Eyewear
+          </h2>
+          <ProductCarousel />
+        </Box>
       </section>
 
       <section className="find-store-section">

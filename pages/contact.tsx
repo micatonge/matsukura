@@ -48,7 +48,7 @@ const Contact = () => {
           component="h1"
           gutterBottom
           align="left"
-          sx={{ color: "#000000" }} // Fixed typo in color value
+          sx={{ color: "#000000" }}  // Fixed typo in color value
         >
           Contact Matsukura Eyewear
         </Typography>
@@ -60,7 +60,7 @@ const Contact = () => {
           sx={{ backgroundColor: "#283618", padding: 3, borderRadius: 2 }}
         >
           <Typography variant="h6" gutterBottom sx={{ color: "#fff" }}>
-            We'd Love to Hear from You!
+            We&apos;d Love to Hear from You!
           </Typography>
 
           <TextField
@@ -154,7 +154,7 @@ const Contact = () => {
           variant="h4"
           gutterBottom
           align="left"
-          sx={{ color: "#000000" }} // Fixed typo in color value
+          sx={{ color: "#000000" }}  // Fixed typo in color value
         >
           Our Store Locations
         </Typography>
@@ -192,7 +192,7 @@ const Contact = () => {
                 <br />
                 Regular Hours: 10:00 AM - 6:30 PM
                 <br />
-                Closed: December 31 (afternoon) – January 3
+                Closed: December 31 (Closed from 1:00 PM)
               </Typography>
             </Box>
           </Grid>
@@ -202,23 +202,16 @@ const Contact = () => {
               sx={{ padding: 2, backgroundColor: "#fefae0", borderRadius: 1 }}
             >
               <Typography variant="h6" gutterBottom sx={{ color: "#283618" }}>
-                楽天ショップ (Rakuten Shop)
+                京橋店 (Kyobashi Store)
               </Typography>
               <Typography variant="body2" paragraph sx={{ color: "#34495e" }}>
-                Website:{" "}
-                <a
-                  href="https://www.rakuten.ne.jp/gold/glass-m-shop/"
-                  target="_blank"
-                  style={{ color: "#606c38" }}
-                >
-                  Visit our Rakuten Shop
-                </a>
+                Address: 大阪市中央区京橋1丁目14番8号
                 <br />
-                Phone: 06-6654-3142
+                Phone: 06-6943-6176
                 <br />
-                Regular Hours: 10:00 AM - 6:00 PM
+                Regular Hours: 10:00 AM - 6:30 PM
                 <br />
-                Closed: Every Sunday, Holidays, December 31 – January 4
+                Closed: Sundays and National Holidays
               </Typography>
             </Box>
           </Grid>

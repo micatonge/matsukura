@@ -48,7 +48,7 @@ const Contact = () => {
           component="h1"
           gutterBottom
           align="left"
-          sx={{ color: "#00000" }}
+          sx={{ color: "#000000" }} // Fixed typo in color value
         >
           Contact Matsukura Eyewear
         </Typography>
@@ -154,7 +154,7 @@ const Contact = () => {
           variant="h4"
           gutterBottom
           align="left"
-          sx={{ color: "#00000" }}
+          sx={{ color: "#000000" }} // Fixed typo in color value
         >
           Our Store Locations
         </Typography>

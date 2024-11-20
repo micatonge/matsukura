@@ -1,5 +1,6 @@
 import { Box, Grid } from "@mui/material";
-import ProductCard from "/components/ProductCard.tsx"; // Assuming you already have this component
+import ProductCard from "../components/ProductCard"; // Use a relative path
+ // Assuming you already have this component
 
 const sunglasses = () => {
   return (

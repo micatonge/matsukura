@@ -26,36 +26,45 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 
+/* Brand section with logo and title */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 2rem; /* Space between logo and title */
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color); /* Adjust according to theme */
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
 /* Links section */
 .nav-links {
   display: flex;
   gap: 1.5rem; /* Space between links */
   flex-wrap: wrap; /* Allow links to wrap onto new line */
+
 }
 
-/* Mobile-responsive navbar - make links stack vertically on smaller screens */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Stack navbar items vertically */
-    padding: 1.5rem 1rem; /* Adjust padding for smaller screens */
-  }
-
-  .navbar-brand {
-    margin-bottom: 1rem; /* Add spacing between logo and links */
-  }
-
-  .nav-links {
-    flex-direction: column; /* Stack the links vertically */
-    gap: 0.75rem; /* Reduced gap for smaller screens */
-    width: 100%; /* Ensure links span the full width */
-  }
-
-  .nav-link {
-    text-align: center; /* Center-align text on mobile */
-    font-size: 1.1rem; /* Adjust font size for better readability */
-  }
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #283618; /* Change color to dark green on hover */
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
 }
 
+.nav-link:hover {
+  color: #606c38; /* Dark green color on hover */
+}
 
 /* Hero section styles */
 .hero {

@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";  // Import useRouter hook from Next.js
 import {
   Card,
   CardContent,
@@ -7,6 +8,12 @@ import {
 } from "@mui/material";
 
 const ProductCard = ({ product }) => {
+  const router = useRouter();  // Initialize the router
+
+  const handleInquireClick = () => {
+    router.push("/contact");  // Navigate to the /contact page
+  };
+
   return (
     <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 2 }}>
       <CardMedia
@@ -41,6 +48,7 @@ const ProductCard = ({ product }) => {
             },
           }}
           fullWidth
+          onClick={handleInquireClick}  // Add the click handler
         >
           Inquire
         </Button>
